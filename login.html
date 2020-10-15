@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Login/Sign up</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style type="text/css">
+	
+		body{
+			margin: 0;
+			background-color: #2B4162;
+		}
+		.container{
+			margin: 4% auto; 
+			background-color: #1D7874;
+			padding: 4%;
+			width: 40%;
+			box-shadow: 4px 5px 5px #E42535;
+		}
+		h3{
+			font-family: cursive;
+			fn
+		}
+		input{
+			height: 32px;
+			border: 1px solid #020300;
+			border-radius: 5px;
+			font-family: Serif;
+			padding: 2%;
+			width: 120%;
+			margin: 1%;
+		}
+		#login-form{
+			width: 100%;
+		}
+		a{
+			font-size: small;
+			color: #D3D57C; 
+			width: 100%;
+		}
+		#sbbtn{
+			width: 35%;
+		}
+	</style>
 </head>
 <body>
-<form action="login.php" method="POST">
-<b>Username:</b><input type="text" name="name"><br>
-<b>Password</b><input type="Password" name="pass"><br>
-	<input type="submit" value="Login">
-</form>
+	<div class="container">
+		<h3>Login</h3>
+		
+	<form id="login-form" action="login.php" method="POST">
+		<table><tr>
+			<td>
+				<input type="text" name="name" alt="username" placeholder="Email" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="password" name="pass" alt="password" placeholder="Password" required>
+			</td>
+		</tr>
+		<tr>
+		   
+			
+			<td>
+				<input id="sbbtn" type="submit" name="submit" alt="submit" role="button" value="Log in">
+				 <a href="#chng_pwd.php">Forgot password?</a>
+			</td>
+			
+		</tr></table>
+		<p style="color: black; font-weight: 800; font-family: cursive;">Not registered? <a href="register.html">Sign Up</a> </p>
 
-<p>Not regestered <a href="regester.html">Regester Here</a> </p>
+	
+	</form>
+
+	</div>
 
 </body>
 

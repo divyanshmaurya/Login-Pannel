@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `db_regester` (
+  'Fname' varchar(32) NOT NULL,
+  'Lname' varchar(32) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
