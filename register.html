@@ -2,13 +2,88 @@
 <html>
 <head>
 	<title></title>
+		<style type="text/css">
+	
+		body{
+			margin: 0;
+			background-color: #2B4162;
+		}
+		.container{
+			margin: 4% auto; 
+			background-color: #1D7874;
+			padding: 4%;
+			width: 40%;
+			box-shadow: 4px 5px 5px #E42535;
+		}
+		h3{
+			font-family: cursive;
+			fn
+		}
+		input{
+			height: 32px;
+			border: 1px solid #020300;
+			border-radius: 5px;
+			font-family: Serif;
+			padding: 2%;
+			width: 120%;
+			margin: 1%;
+		}
+		#login-form{
+			width: 100%;
+		}
+		a{
+			font-size: small;
+			color: #D3D57C; 
+			width: 100%;
+		}
+		#sbbtn{
+			width: 45%;
+		}
+		td{
+			padding: 5px 35px;
+
+		}
+		
+	</style>
 </head>
 <body>
-<form action="p_regester.php" method="POST">
-<b>Username:</b><input type="text" name="name"><br>
-<b>Password</b><input type="Password" name="pass"><br>
-<input type="submit">
+
+
+
+<div class="container">
+	<h3>Sign Up</h3>
+	
+<form id="login-form" action="register.php" method="POST">
+	<table>
+		<tr>
+			<td><input type="text" name="fName" alt="fName" placeholder="First Name" required></td>
+			<td><input type="text" name="lName" alt="lName" placeholder="Last Name" required></td>
+
+		</tr>
+	<tr>
+		<td>
+			<input type="text" name="name" alt="username" placeholder="Email" required>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="password" name="pass" alt="password" placeholder="Password" required>
+		</td>
+	</tr>
+	<tr>
+	   
+		
+		<td>
+			<input id="sbbtn" type="submit" name="submit" alt="submit" role="button" value="Sign Up">
+			 
+		</td>
+		
+	</tr></table>
+
+
 </form>
+
+</div>
 </body>
 
 </html>
